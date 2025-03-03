@@ -15,6 +15,15 @@ const path = require('path');
 // Create Express app
 const app = express();
 
+// Middleware
+app.use(cors());
+app.use(express.json());
+
+// Serve static files from the current directory
+app.use(express.static('.', {
+  extensions: ['html'] // Allow serving .html files without extension
+}));
+
 // URL rewriting middleware
 app.use((req, res, next) => {
   // Clean URLs to HTML files mapping
@@ -28,6 +37,7 @@ app.use((req, res, next) => {
   // Check if the URL needs rewriting
   if (urlMap[req.path]) {
     req.url = urlMap[req.path];
+    return res.sendFile(path.join(__dirname, req.url));
   }
 
   next();
@@ -40,14 +50,6 @@ const io = socketIo(server, {
     methods: ['GET', 'POST']
   }
 });
-
-// Middleware
-app.use(cors());
-app.use(express.json());
-// Serve static files from the current directory
-app.use(express.static('.', {
-  extensions: ['html'] // Allow serving .html files without extension
-}));
 
 // Connect to MongoDB (using MongoDB Atlas or local fallback)
 // For MongoDB Atlas, set MONGO_URI in .env file
