@@ -10,9 +10,29 @@ dotenv.config();
 
 // Import routes
 const apiRoutes = require('./routes/api');
+const path = require('path');
 
 // Create Express app
 const app = express();
+
+// URL rewriting middleware
+app.use((req, res, next) => {
+  // Clean URLs to HTML files mapping
+  const urlMap = {
+    '/': '/loading.html',
+    '/home': '/home.html',
+    '/loading': '/loading.html',
+    '/gallery': '/gallery.html'
+  };
+
+  // Check if the URL needs rewriting
+  if (urlMap[req.path]) {
+    req.url = urlMap[req.path];
+  }
+
+  next();
+});
+
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
@@ -24,7 +44,10 @@ const io = socketIo(server, {
 // Middleware
 app.use(cors());
 app.use(express.json());
-app.use(express.static('.')); // Serve static files from the current directory
+// Serve static files from the current directory
+app.use(express.static('.', {
+  extensions: ['html'] // Allow serving .html files without extension
+}));
 
 // Connect to MongoDB (using MongoDB Atlas or local fallback)
 // For MongoDB Atlas, set MONGO_URI in .env file

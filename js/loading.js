@@ -12,7 +12,7 @@ let container, camera, scene, renderer, model;
 let mixer, clock, animationId;
 let audioContext, analyser, dataArray;
 let audioElement, audioSource;
-let progressBar, loadingText;
+let progressBar, loadingText, enterButton;
 let isModelLoaded = false;
 let isAudioLoaded = false;
 let isLipSyncActive = false;
@@ -32,6 +32,16 @@ document.addEventListener('DOMContentLoaded', function() {
     progressBar = document.getElementById('progress-bar');
     loadingText = document.getElementById('loading-text');
     audioElement = document.getElementById('speech-audio');
+    enterButton = document.getElementById('enter-button');
+
+    // Set up enter button click handler
+    enterButton.addEventListener('click', handleEnterClick);
+
+    // Show enter button after 5 seconds as fallback
+    setTimeout(() => {
+        enterButton.classList.add('show');
+        loadingText.textContent = 'Click Enter to continue';
+    }, 5000);
     
     // Set audio source
     document.getElementById('audio-source').src = 'assets/audio/speech.mp3';
@@ -312,9 +322,39 @@ function updateLoadingProgress() {
         loadingText.textContent = 'Ready!';
         progressBar.style.width = '100%';
         
+        // Show enter button
+        enterButton.classList.add('show');
+        
         // Short delay before starting
         setTimeout(startExperience, 500);
     }
+}
+
+/**
+ * Handle enter button click
+ */
+function handleEnterClick() {
+    // Stop audio if playing
+    if (!audioElement.paused) {
+        audioElement.pause();
+        audioElement.currentTime = 0;
+    }
+
+    // Deactivate lip sync
+    isLipSyncActive = false;
+
+    // Reset jaw position
+    if (jawBone && jawBone.rotation) {
+        jawBone.rotation.x = originalJawRotation;
+    }
+
+    // Add fade-out animation
+    document.body.classList.add('fade-out');
+
+    // Redirect after fade-out
+    setTimeout(() => {
+        window.location.href = '/home';
+    }, 1000);
 }
 
 /**
@@ -365,7 +405,7 @@ function onAudioEnded() {
     
     // Redirect after fade-out completes
     setTimeout(() => {
-        window.location.href = 'main-index.html';
+        window.location.href = '/home';
     }, 1000);
 }
 
