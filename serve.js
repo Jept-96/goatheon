@@ -27,16 +27,26 @@ const MIME_TYPES = {
 const server = http.createServer((req, res) => {
   console.log(`Request: ${req.method} ${req.url}`);
   
-  // Handle root URL
+  // Handle clean URLs and root URL
   let url = req.url;
-  if (url === '/') {
-    url = '/gallery.html';
-  }
   
   // Remove query parameters
   const queryParamIndex = url.indexOf('?');
   if (queryParamIndex !== -1) {
     url = url.substring(0, queryParamIndex);
+  }
+
+  // URL mapping
+  const urlMap = {
+    '/': '/loading.html',
+    '/home': '/home.html',
+    '/loading': '/loading.html',
+    '/gallery': '/gallery.html'
+  };
+
+  // Check if we have a mapping for this URL
+  if (urlMap[url]) {
+    url = urlMap[url];
   }
   
   // Get the file path
@@ -83,7 +93,9 @@ const server = http.createServer((req, res) => {
 
 server.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}/`);
-  console.log(`To view the gallery with your updated NFT data, open: http://localhost:${PORT}/gallery.html`);
-  console.log(`To clear localStorage and reload from nft-data.json, open: http://localhost:${PORT}/gallery.html?clear=true`);
+  console.log(`Clean URLs enabled:`);
+  console.log(`  http://localhost:${PORT}/       -> Loading page`);
+  console.log(`  http://localhost:${PORT}/home   -> Home page`);
+  console.log(`  http://localhost:${PORT}/gallery -> Gallery page`);
   console.log('Press Ctrl+C to stop the server');
 });
