@@ -122,7 +122,7 @@
 
         /* Enter Now button styles */
         .enter-button {
-            display: none; /* Initially hidden */
+            display: inline-block;
             padding: 15px 40px;
             margin-top: 20px;
             font-family: var(--font-heading);
@@ -142,10 +142,6 @@
             transform: scale(1.05);
             animation: none;
         }
-
-        .enter-button.show {
-            display: inline-block;
-        }
     </style>
 </head>
 <body>
@@ -163,7 +159,7 @@
         </div>
         
         <p id="loading-text" class="loading-text">Loading...</p>
-        <button id="enter-button" class="enter-button">Enter Now</button>
+        <button id="enter-button" class="enter-button">Goat Whispers</button>
     </div>
     
     <div class="audio-container">
