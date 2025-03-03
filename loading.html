@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading - Goatheon</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <!-- Google Fonts - Yatra One -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/images/fav.png" type="image/png">
+    
+    <!-- Three.js Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/GLTFLoader.js"></script>
+    
+    <style>
+        /* Loading page specific styles */
+        body {
+            overflow: hidden;
+            background-color: var(--color-background);
+            color: var(--color-text);
+            font-family: var(--font-body);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .loading-container {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .model-container {
+            width: 100%;
+            height: 500px;
+            position: relative;
+            margin-bottom: 2rem;
+        }
+        
+        .loading-title {
+            font-family: var(--font-heading);
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+        
+        .loading-subtitle {
+            font-family: var(--font-heading);
+            font-size: 1rem;
+            margin-bottom: 2rem;
+            opacity: 0.8;
+        }
+        
+        .progress-container {
+            width: 80%;
+            max-width: 500px;
+            height: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 1rem;
+        }
+        
+        .progress-bar {
+            height: 100%;
+            width: 0%;
+            background-color: var(--color-accent);
+            transition: width 0.3s ease;
+        }
+        
+        .loading-text {
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+        
+        /* Fade transition */
+        .fade-out {
+            animation: fadeOut 1s forwards;
+        }
+        
+        @keyframes fadeOut {
+            from { opacity: 1; }
+            to { opacity: 0; }
+        }
+        
+        /* Audio controls - hidden but accessible */
+        .audio-container {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            opacity: 0.5;
+            transition: opacity 0.3s ease;
+        }
+        
+        .audio-container:hover {
+            opacity: 1;
+        }
+        
+        /* Loading animation for the title */
+        .loading-title {
+            animation: glowPulse 2s infinite alternate;
+        }
+        
+        @keyframes glowPulse {
+            from { text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); }
+            to { text-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.6); }
+        }
+    </style>
+</head>
+<body>
+    <div class="loading-container">
+        <h1 class="loading-title">Goatheon</h1>
+        
+        <p class="loading-subtitle">GOAT IS CODED</p>
+        
+        <div id="model-container" class="model-container">
+            <!-- 3D model will be rendered here -->
+        </div>
+        
+        <div class="progress-container">
+            <div id="progress-bar" class="progress-bar"></div>
+        </div>
+        
+        <p id="loading-text" class="loading-text">Loading...</p>
+    </div>
+    
+    <div class="audio-container">
+        <audio id="speech-audio" preload="auto">
+            <!-- Audio file will be set via JavaScript -->
+            <source id="audio-source" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    
+    <!-- Loading script -->
+    <script src="js/loading.js"></script>
+</body>
+</html>

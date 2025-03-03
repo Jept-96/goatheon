@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Server Instructions for 3D Models</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #222;
+        }
+        .container {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .method {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .method:last-child {
+            border-bottom: none;
+        }
+        code {
+            background-color: #f0f0f0;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        pre {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: monospace;
+        }
+        .note {
+            background-color: #fffde7;
+            padding: 15px;
+            border-left: 4px solid #ffd600;
+            margin: 20px 0;
+        }
+        .error {
+            background-color: #ffebee;
+            padding: 15px;
+            border-left: 4px solid #f44336;
+            margin: 20px 0;
+        }
+        .success {
+            background-color: #e8f5e9;
+            padding: 15px;
+            border-left: 4px solid #4caf50;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Running a Local Server for 3D Models</h1>
+        
+        <div class="error">
+            <h3>Why You're Seeing This Page</h3>
+            <p>You're trying to view a website with 3D models (GLB files), but they're not loading correctly. This is likely due to CORS (Cross-Origin Resource Sharing) restrictions when opening HTML files directly from your file system.</p>
+            <p>The browser's security policy prevents loading local resources like 3D models when using the <code>file://</code> protocol.</p>
+        </div>
+        
+        <p>To properly view the 3D models, you need to run the website using a local web server. Here are several easy methods to do this:</p>
+        
+        <div class="method">
+            <h2>Method 1: Using Python (Simplest)</h2>
+            <p>If you have Python installed (most systems do), you can start a simple HTTP server with one command:</p>
+            
+            <h3>For Python 3:</h3>
+            <pre>python -m http.server</pre>
+            
+            <h3>For Python 2:</h3>
+            <pre>python -m SimpleHTTPServer</pre>
+            
+            <p>After running this command:</p>
+            <ol>
+                <li>Open your browser and go to <a href="http://localhost:8000">http://localhost:8000</a></li>
+                <li>Navigate to the index.html file</li>
+            </ol>
+        </div>
+        
+        <div class="method">
+            <h2>Method 2: Using Node.js</h2>
+            <p>If you have Node.js installed:</p>
+            
+            <h3>Install the 'serve' package (one-time setup):</h3>
+            <pre>npm install -g serve</pre>
+            
+            <h3>Then run:</h3>
+            <pre>serve</pre>
+            
+            <p>Or without installing globally:</p>
+            <pre>npx serve</pre>
+            
+            <p>After running this command:</p>
+            <ol>
+                <li>Open your browser and go to the URL shown in the terminal (usually <a href="http://localhost:3000">http://localhost:3000</a>)</li>
+            </ol>
+        </div>
+        
+        <div class="method">
+            <h2>Method 3: Using VS Code Live Server Extension</h2>
+            <p>If you're using Visual Studio Code:</p>
+            
+            <ol>
+                <li>Install the "Live Server" extension by Ritwick Dey</li>
+                <li>Right-click on your index.html file</li>
+                <li>Select "Open with Live Server"</li>
+                <li>Your default browser will open automatically with the correct URL</li>
+            </ol>
+        </div>
+        
+        <div class="method">
+            <h2>Method 4: Using PHP (if installed)</h2>
+            <pre>php -S localhost:8000</pre>
+            
+            <p>Then open <a href="http://localhost:8000">http://localhost:8000</a> in your browser.</p>
+        </div>
+        
+        <div class="success">
+            <h3>Success Indicator</h3>
+            <p>You'll know you're running the site correctly when:</p>
+            <ul>
+                <li>The URL in your browser starts with <code>http://</code> instead of <code>file://</code></li>
+                <li>The 3D model appears in the hero section instead of the static fallback image</li>
+                <li>No CORS errors appear in the browser's developer console</li>
+            </ul>
+        </div>
+        
+        <div class="note">
+            <h3>Troubleshooting</h3>
+            <p>If you still have issues:</p>
+            <ul>
+                <li>Make sure your GLB file is correctly named <code>hero-model.glb</code> and placed in the <code>assets/models/</code> directory</li>
+                <li>Check if the GLB file is valid and not corrupted</li>
+                <li>Check the browser console for specific error messages</li>
+                <li>Try a different browser</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

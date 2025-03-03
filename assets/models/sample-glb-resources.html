@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample GLB Resources</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #222;
+        }
+        .container {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .resources {
+            margin-top: 30px;
+        }
+        .resource-item {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .resource-item:last-child {
+            border-bottom: none;
+        }
+        code {
+            background-color: #f0f0f0;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        .note {
+            background-color: #fffde7;
+            padding: 15px;
+            border-left: 4px solid #ffd600;
+            margin: 20px 0;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sample GLB Resources</h1>
+        <p>This page provides resources for finding, creating, and optimizing GLB files for use in the cryptocurrency website template.</p>
+        
+        <div class="note">
+            <strong>Important:</strong> To use a 3D model in the hero section, rename your GLB file to <code>hero-model.glb</code> and place it in the <code>assets/models/</code> directory.
+        </div>
+        
+        <div class="resources">
+            <h2>Where to Find GLB Models</h2>
+            
+            <div class="resource-item">
+                <h3>1. Sketchfab</h3>
+                <p>Sketchfab has thousands of 3D models, many available for free under Creative Commons licenses.</p>
+                <p><a href="https://sketchfab.com/features/download" target="_blank">https://sketchfab.com/features/download</a></p>
+                <p>Look for models that can be downloaded in glTF/GLB format.</p>
+            </div>
+            
+            <div class="resource-item">
+                <h3>2. Google Poly (Archive)</h3>
+                <p>While Google Poly has been shut down, its archive is still available through third-party sites.</p>
+                <p><a href="https://poly.pizza/" target="_blank">https://poly.pizza/</a></p>
+            </div>
+            
+            <div class="resource-item">
+                <h3>3. Blender Market</h3>
+                <p>Paid models that are often high quality and can be exported to GLB format.</p>
+                <p><a href="https://blendermarket.com/" target="_blank">https://blendermarket.com/</a></p>
+            </div>
+            
+            <h2>Creating Your Own GLB Models</h2>
+            
+            <div class="resource-item">
+                <h3>1. Blender (Free)</h3>
+                <p>Blender is a powerful free 3D modeling software that can export directly to GLB format.</p>
+                <p><a href="https://www.blender.org/" target="_blank">https://www.blender.org/</a></p>
+                <p>To export as GLB in Blender:</p>
+                <ol>
+                    <li>Go to File > Export > glTF 2.0 (.glb/.gltf)</li>
+                    <li>Select "glTF Binary (.glb)" format</li>
+                    <li>Configure export settings (include animations if needed)</li>
+                    <li>Click "Export"</li>
+                </ol>
+            </div>
+            
+            <div class="resource-item">
+                <h3>2. Online 3D Modeling Tools</h3>
+                <p>Some online tools allow you to create and export 3D models without installing software:</p>
+                <ul>
+                    <li><a href="https://www.vectary.com/" target="_blank">Vectary</a></li>
+                    <li><a href="https://www.tinkercad.com/" target="_blank">TinkerCAD</a> (may require conversion)</li>
+                </ul>
+            </div>
+            
+            <h2>Converting and Optimizing GLB Files</h2>
+            
+            <div class="resource-item">
+                <h3>1. glTF Transform</h3>
+                <p>A command-line tool for optimizing and transforming glTF/GLB files.</p>
+                <p><a href="https://gltf-transform.donmccurdy.com/" target="_blank">https://gltf-transform.donmccurdy.com/</a></p>
+            </div>
+            
+            <div class="resource-item">
+                <h3>2. Online glTF/GLB Converter</h3>
+                <p>Convert various 3D formats to GLB online:</p>
+                <p><a href="https://products.aspose.app/3d/conversion/obj-to-glb" target="_blank">https://products.aspose.app/3d/conversion/obj-to-glb</a></p>
+            </div>
+            
+            <div class="resource-item">
+                <h3>3. glTF Validator</h3>
+                <p>Check if your GLB file is valid and optimized:</p>
+                <p><a href="https://github.khronos.org/glTF-Validator/" target="_blank">https://github.khronos.org/glTF-Validator/</a></p>
+            </div>
+        </div>
+        
+        <div class="note">
+            <h3>Tips for Good Performance</h3>
+            <ul>
+                <li>Keep file size under 5MB for faster loading</li>
+                <li>Reduce polygon count (10,000-50,000 polygons is a good target)</li>
+                <li>Optimize textures (1024x1024 or smaller)</li>
+                <li>Remove unnecessary animations or bones</li>
+                <li>Test on different devices to ensure compatibility</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,512 @@
+[
+  {
+    "id": 1,
+    "title": "Goatesis",
+    "description": "The prophecy spoke of a celestial goat who would bridge worlds, uniting the mortal and divine. On the night of the eclipse, Goatesis stepped through the cosmic gate, his hooves echoing across eternity."
+  },
+  {
+    "id": 2,
+    "title": "Goatnin",
+    "description": "Hidden in the shadows, Goatnin struck unseen, his blade whispering through the night. His enemies only saw the flicker of his crimson scarf before darkness consumed them."
+  },
+  {
+    "id": 3,
+    "title": "Goatashi",
+    "description": "In the mountain temple of lost warriors, Goatashi meditated for a century, waiting for the chosen one. When the bells of fate tolled, he descended with wisdom sharper than any sword."
+  },
+  {
+    "id": 4,
+    "title": "Goatzan",
+    "description": "The desert winds whispered his name as he walked alone, a nomad bound by no land. When the warlords challenged him, Goatzan crushed them beneath his unwavering will."
+  },
+  {
+    "id": 5,
+    "title": "Goataku",
+    "description": "Once an outcast, Goataku roamed the neon streets of the cyber city, hacking his destiny. When the AI overlords declared him obsolete, he rewrote the code of the universe."
+  },
+  {
+    "id": 6,
+    "title": "Goatama",
+    "description": "Goatama sat beneath the sacred fig tree, untouched by the world's chaos. The moment he opened his eyes, the cosmos trembled, for enlightenment had taken form."
+  },
+  {
+    "id": 7,
+    "title": "Goaten",
+    "description": "Forged in the celestial flames, Goaten wielded the golden hammer of creation. With a single swing, he reshaped mountains and commanded the tides."
+  },
+  {
+    "id": 8,
+    "title": "Goatora",
+    "description": "Deep within the haunted jungle, Goatora prowled, unseen but ever-watching. The foolish hunters who sought his horns never returned."
+  },
+  {
+    "id": 9,
+    "title": "Goathos",
+    "description": "In the ruins of a lost empire, Goathos sat upon a throne of bones. He was no king of the living, but the ruler of all forgotten souls"
+  },
+  {
+    "id": 10,
+    "title": "Goatros",
+    "description": "When the twin moons aligned, Goatros rose from his slumber beneath the frozen lake. His arrival meant either salvation or destruction, and none knew which."
+  },
+  {
+    "id": 11,
+    "title": "Goatimus",
+    "description": "An artifact of divine technology, Goatimus was the first and last of his kind. His circuits pulsed with ancient wisdom, but the universe feared his power."
+  },
+  {
+    "id": 12,
+    "title": "Goatron",
+    "description": "Created as a war machine, Goatron defied his masters and sought peace. Yet no matter where he fled, war always found him again."
+  },
+  {
+    "id": 13,
+    "title": "Goatigen",
+    "description": "The alchemists of old spoke of Goatigen, the philosopher’s goat. It was said that his blood could turn lead into gold, but those who sought it vanished without a trace."
+  },
+  {
+    "id": 14,
+    "title": "Goatagan",
+    "description": "The storm herald, Goatagan, rode upon the hurricane winds. With a crack of thunder, he swept entire armies into the abyss."
+  },
+  {
+    "id": 15,
+    "title": "Goatlith",
+    "description": "An obsidian monolith stood at the edge of the world, etched with forgotten runes. The elders called it Goatlith, the gate to realms unknown."
+  },
+  {
+    "id": 16,
+    "title": "Goatlux",
+    "description": "In a city bathed in neon and sin, Goatlux walked untouched by corruption. Every gambler, thief, and king feared the moment his glowing eyes met theirs."
+  },
+  {
+    "id": 17,
+    "title": "Goathex",
+    "description": " A whisper in the dark, a chill down the spine—Goathex was the curse that never died. No exorcism could banish him, for he was fear itself."
+  },
+  {
+    "id": 18,
+    "title": "Goatara",
+    "description": "In the heart of the inferno, Goatara danced with flames that obeyed his will. His laughter echoed as he commanded fire to devour the unworthy."
+  },
+  {
+    "id": 19,
+    "title": "Goatlithic",
+    "description": "A fossil of godly proportions, Goatlithic slumbered beneath the earth. When he awoke, the mountains bowed to his return."
+  },
+  {
+    "id": 20,
+    "title": "Goatirion",
+    "description": "A wandering knight with a glowing sigil, Goatirion protected the realms from unseen horrors. His sword, bathed in silver light, never dulled."
+  },
+  {
+    "id": 21,
+    "title": "Goataris",
+    "description": "The starry sea held many mysteries, but none greater than Goataris. A cosmic entity older than time, he whispered secrets to those who listened."
+  },
+  {
+    "id": 22,
+    "title": "Goatlion",
+    "description": "With a mane of fire and eyes like the sun, Goatlion roared, shaking the heavens. Even gods feared his might."
+  },
+  {
+    "id": 23,
+    "title": "Goatzuki",
+    "description": "Born from lightning, Goatzuki raced through the clouds faster than sound. His horns crackled with energy, splitting storms in his wake."
+  },
+  {
+    "id": 24,
+    "title": "Goatushi",
+    "description": "A master of the wind, Goatushi vanished like a breeze before the enemy could strike. He lived by the blade but bowed only to fate."
+  },
+  {
+    "id": 25,
+    "title": "Goatova",
+    "description": "Deep beneath the ocean, Goatova slumbered, a guardian of the abyss. When the surface world awoke his wrath, the tides answered in fury."
+  },
+  {
+    "id": 26,
+    "title": "Goatanic",
+    "description": "A cursed vessel, Goatanic drifted through the void, forever lost. No sailor who stepped aboard ever returned."
+  },
+  {
+    "id": 27,
+    "title": "Goataract",
+    "description": "At the peak of the highest waterfall, Goataract meditated. The rushing waters carved their path only by his will."
+  },
+  {
+    "id": 28,
+    "title": "Goathen",
+    "description": "The bringer of twilight, Goathen walked between life and death. His judgment was final, his presence inevitable."
+  },
+  {
+    "id": 29,
+    "title": "Goatshade",
+    "description": "In the realm of eternal dusk, Goatshade roamed, collecting lost souls. Those who walked his path found either peace or oblivion."
+  },
+  {
+    "id": 30,
+    "title": "Goathor",
+    "description": "Forged in the heart of a dying star, Goathor wielded a hammer that could shatter worlds. With every swing, the heavens trembled."
+  },
+  {
+    "id": 31,
+    "title": "Goatlok",
+    "description": "A trickster with a silver tongue, Goatlok weaved lies so convincing they became truth. Even fate itself struggled to outwit him."
+  },
+  {
+    "id": 32,
+    "title": "Goatheim",
+    "description": "In the frozen halls of the north, Goatheim sat upon a throne of ice. His kingdom was eternal, untouched by time."
+  },
+  {
+    "id": 33,
+    "title": "Goatgon",
+    "description": "When the ground quaked, the people knew Goatgon was near. He moved with the force of an earthquake, unstoppable and unchallenged."
+  },
+  {
+    "id": 34,
+    "title": "Goatalis",
+    "description": "A sorcerer of forbidden arts, Goatalis whispered incantations lost to time. With a flick of his horn, reality bent to his will."
+  },
+  {
+    "id": 35,
+    "title": "Goatana",
+    "description": "The desert wanderer, Goatana carried the map to lost civilizations. Those who followed him found either fortune or doom."
+  },
+  {
+    "id": 36,
+    "title": "Goatobi",
+    "description": "A master of illusion, Goatobi faded into the mist before any blade could touch him. Legends say he still watches from the shadows, waiting."
+  },
+  {
+    "id": 37,
+    "title": "Goataru",
+    "description": "With a single stroke of his brush, Goataru painted worlds into existence. Every masterpiece he created became reality."
+  },
+  {
+    "id": 38,
+    "title": "Goatren",
+    "description": "A rogue warrior, Goatren defied his destiny and carved a new path with his twin blades. He was feared, not because of his power, but because he bowed to no one."
+  },
+  {
+    "id": 39,
+    "title": "Goatlaz",
+    "description": "A rebel of the neon underworld, Goatlaz ruled the cyber streets with a steel hoof. When the city turned against him, he burned it all down."
+  },
+  {
+    "id": 40,
+    "title": "Goathrax",
+    "description": "A plague spreader from the abyss, Goathrax rode upon the winds of death. Where he walked, life withered."
+  },
+  {
+    "id": 41,
+    "title": "Goatoxis",
+    "description": "The master of poisons, Goatoxis brewed elixirs that could cure or kill. Only those who earned his trust knew which vial to drink from."
+  },
+  {
+    "id": 42,
+    "title": "Goatlume",
+    "description": " A wandering fire spirit, Goatlume flickered in the dark, luring travelers toward unseen dangers. Those who followed never found their way back."
+  },
+  {
+    "id": 43,
+    "title": "Goatarok",
+    "description": "A beast of stone, Goatarok slumbered beneath mountains until the call of war awakened him. His charge could break kingdoms in half."
+  },
+  {
+    "id": 44,
+    "title": "Goathyr",
+    "description": "The storm herald, Goathyr galloped across the skies, his horns crackling with thunder. Every bolt of lightning bore his name."
+  },
+  {
+    "id": 45,
+    "title": "Goatrune",
+    "description": "Keeper of ancient knowledge, Goatrune etched secrets into stone. Only the worthy could decipher his messages."
+  },
+  {
+    "id": 46,
+    "title": "Goatziel",
+    "description": "A guardian from the heavens, Goatziel descended only when darkness threatened to consume the world. His wings shone with divine light."
+  },
+  {
+    "id": 47,
+    "title": "Goatfrost",
+    "description": "Born from the heart of a glacier, Goatfrost's breath could freeze oceans. His presence turned summer into winter."
+  },
+  {
+    "id": 48,
+    "title": "Goatlisk",
+    "description": "Half-serpent, half-goat, Goatlisk’s eyes turned men to stone. He was both a legend and a nightmare."
+  },
+  {
+    "id": 49,
+    "title": "Goatrosan",
+    "description": "A lone swordsman from the east, Goatrosan walked the land seeking justice. His blade knew only truth."
+  },
+  {
+    "id": 50,
+    "title": "Goathulhu",
+    "description": "In the abyssal depths, Goathulhu slumbered, waiting for the stars to align. When he awakens, reality itself will unravel."
+  },
+  {
+    "id": 51,
+    "title": "Goatmurai",
+    "description": "A warrior without a master, Goatmurai lived by the code of the fallen. His oath was unbreakable, his resolve unshaken."
+  },
+  {
+    "id": 52,
+    "title": "Goathion",
+    "description": "The radiant champion, Goathion rode at the front of celestial armies. No demon could withstand his charge"
+  },
+  {
+    "id": 53,
+    "title": "Goatshido",
+    "description": "In the halls of the honored dead, Goatshido’s name was whispered with reverence. He lived and died by the sword, but his legacy never faded."
+  },
+  {
+    "id": 54,
+    "title": "Goatnova",
+    "description": "Born from the explosion of a dying star, Goatnova’s body shimmered with the power of the cosmos."
+  },
+  {
+    "id": 55,
+    "title": "Goataze",
+    "description": "The hypnotist goat, Goataze spoke in riddles that could trap the mind. Those who listened too long never escaped their dreams."
+  },
+  {
+    "id": 56,
+    "title": "Goatlumin",
+    "description": "A spirit of the dawn, Goatlumin emerged only at the first light of day. His touch banished nightmares from the waking world."
+  },
+  {
+    "id": 57,
+    "title": "Goatburn",
+    "description": "A beast of molten fury, Goatburn left trails of fire wherever he walked. The world feared his rage, for it was endless."
+  },
+  {
+    "id": 58,
+    "title": "Goatstorm",
+    "description": "With every clap of thunder, Goatstorm grew stronger. His hooves sparked against the clouds, commanding the sky itself."
+  },
+  {
+    "id": 59,
+    "title": "Goatflare",
+    "description": "A comet in the form of a goat, Goatflare streaked across the heavens. Where he landed, miracles—or calamities—followed."
+  },
+  {
+    "id": 60,
+    "title": "Goatmirage",
+    "description": "A phantom of the desert, Goatmirage appeared only to those on the brink of collapse. Was he real, or just a trick of the sun?"
+  },
+  {
+    "id": 61,
+    "title": "Goatlore",
+    "description": "The keeper of forgotten legends, Goatlore carried stories etched into his horns, each one older than time itself."
+  },
+  {
+    "id": 62,
+    "title": "Goathex",
+    "description": "A cursed wanderer, Goathex carried the burden of an ancient spell, seeking the one who cast it upon him."
+  },
+  {
+    "id": 63,
+    "title": "Goatlight",
+    "description": "A divine entity, Goatlight’s horns glowed with celestial energy, guiding lost souls home."
+  },
+  {
+    "id": 64,
+    "title": "Goatspire",
+    "description": " Atop the highest peak, Goatspire stood alone, the last guardian of an age long forgotten."
+  },
+  {
+    "id": 65,
+    "title": "Goatscourge",
+    "description": "A bringer of reckoning, Goatscourge’s shadow loomed over kingdoms before their fall."
+  },
+  {
+    "id": 66,
+    "title": "Goatveil",
+    "description": "Draped in mist, Goatveil walked the line between the living and the dead, unseen yet always present."
+  },
+  {
+    "id": 67,
+    "title": "Goatquake",
+    "description": "One stomp of his hoof, and the earth split open. Goatquake was nature’s fury given form."
+  },
+  {
+    "id": 68,
+    "title": "Goatvortex",
+    "description": "Swirling with infinite energy, Goatvortex consumed all in his spiraling path."
+  },
+  {
+    "id": 69,
+    "title": "Goatsorrow",
+    "description": "A creature of endless mourning, Goatsorrow carried the weight of every forgotten dream."
+  },
+  {
+    "id": 70,
+    "title": "Goataris",
+    "description": "The god of lost travelers, Goataris guided souls through the endless void. Those who followed him found either home or oblivion."
+  },
+  {
+    "id": 71,
+    "title": "Goatghoul",
+    "description": "Neither living nor dead, Goatghoul lurked in the ruins of fallen empires."
+  },
+  {
+    "id": 72,
+    "title": "Goatseraph",
+    "description": "Goatseraph descended only when the world was in dire need."
+  },
+  {
+    "id": 73,
+    "title": "Goatzephyr",
+    "description": "A spirit of the wind, Goatzephyr’s whisper could be heard in every gentle breeze."
+  },
+  {
+    "id": 74,
+    "title": "Goatnir",
+    "description": "A celestial traveler, Goatnir rode the night sky, weaving constellations with his every step."
+  },
+  {
+    "id": 75,
+    "title": "Goatward",
+    "description": "The eternal protector, Goatward stood unyielding against the tide of darkness."
+  },
+  {
+    "id": 76,
+    "title": "Goatwraith",
+    "description": " A spectral figure, Goatwraith roamed battlefields, collecting the echoes of lost warriors."
+  },
+  {
+    "id": 77,
+    "title": "Goathowl",
+    "description": "His cry split the silence of midnight, a sound that sent shivers through even the bravest hearts."
+  },
+  {
+    "id": 78,
+    "title": "Goatnirvana",
+    "description": "A being of enlightenment, Goatnirvana carried the secrets of the universe within his"
+  },
+  {
+    "id": 79,
+    "title": "Goatmaul",
+    "description": "With a single strike, Goatmaul shattered mountains and sent armies fleeing."
+  },
+  {
+    "id": 80,
+    "title": "Goatspite",
+    "description": "The embodiment of vengeance, Goatspite never forgave, never forgot."
+  },
+  {
+    "id": 81,
+    "title": "Goatvoid",
+    "description": "A creature of pure nothingness, Goatvoid consumed all who gazed too long into his abyss."
+  },
+  {
+    "id": 82,
+    "title": "Goatmir",
+    "description": " A mirror of fate, Goatmir reflected the destiny of those who looked upon him."
+  },
+  {
+    "id": 83,
+    "title": "Goatslumber",
+    "description": "The dreamwalker, Goatslumber whispered secrets into the minds of the sleeping."
+  },
+  {
+    "id": 84,
+    "title": "Goatpyxis",
+    "description": "The cosmic navigator, Goatpyxis guided wayward souls through the vast unknown."
+  },
+  {
+    "id": 85,
+    "title": "Goatfrost",
+    "description": "A god of winter, Goatfrost’s touch turned forests into crystalline wastelands."
+  },
+  {
+    "id": 86,
+    "title": "Goatbrine",
+    "description": "The spirit of the deep, Goatbrine emerged from the ocean’s abyss only once every century."
+  },
+  {
+    "id": 87,
+    "title": "Goatthorn",
+    "description": "A guardian of sacred groves, Goatthorn’s antlers carried the very essence of nature itself."
+  },
+  {
+    "id": 88,
+    "title": "Goatbane",
+    "description": "A relentless hunter, Goatbane stalked creatures of the night, his blade sharp as the stars."
+  },
+  {
+    "id": 89,
+    "title": "Goatvalon",
+    "description": " The lost king of a forgotten realm, Goatvalon’s legend endured long after his kingdom crumbled to dust."
+  },
+  {
+    "id": 90,
+    "title": "Goatborne",
+    "description": "Said to be forged in the heart of the cosmos, Goatborne descended upon the world to reshape destiny itself."
+  },
+  {
+    "id": 91,
+    "title": "Goatzen",
+    "description": "A master of balance, Goatzen wandered the lands, bringing harmony to both chaos and order with a single step."
+  },
+  {
+    "id": 92,
+    "title": "Goatzar",
+    "description": "A ruler of celestial realms, Goatzar’s golden horns shimmered with the power of a thousand stars."
+  },
+  {
+    "id": 93,
+    "title": "Goatzure",
+    "description": "Born from the purest waters, Goatzure’s form was ever-changing, like the ocean itself."
+  },
+  {
+    "id": 94,
+    "title": "Goatstorm",
+    "description": "Thunder and lightning followed Goatstorm, his hooves striking like bolts from the sky."
+  },
+  {
+    "id": 95,
+    "title": "Goatflare",
+    "description": "Born from the heart of a dying star, Goatflare blazes through the darkness, leaving trails of embers in its wake."
+  },
+  {
+    "id": 96,
+    "title": "Goatsurge",
+    "description": "A force of pure energy, Goatsurge’s arrival was heralded by flashes of lightning and roaring tempests."
+  },
+  {
+    "id": 97,
+    "title": "Goatcipher",
+    "description": "A puzzle unsolved, Goatcipher’s existence was a riddle only the wise could comprehend."
+  },
+  {
+    "id": 98,
+    "title": "Goathavoc",
+    "description": "Chaos incarnate, Goathavoc’s mere presence turned battlefields into storms of destruction."
+  },
+  {
+    "id": 99,
+    "title": "Goatrune",
+    "description": "Etched with ancient sigils, Goatrune carried the forgotten magic of a lost civilization."
+  },
+  {
+    "id": 100,
+    "title": "Goatmancer",
+    "description": "A wielder of forbidden magic, Goatmancer’s incantations could alter fate itself."
+  },
+  {
+    "id": 101,
+    "title": "Goatshroud",
+    "description": "Cloaked in eternal darkness, Goatshroud moved unseen, feared even by the gods themselves."
+  },
+  {
+    "id": 102,
+    "title": "Goatgeist",
+    "description": "A wandering phantom, Goatgeist’s eerie presence sent chills through the bravest warriors."
+  }
+]

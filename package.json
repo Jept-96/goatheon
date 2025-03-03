@@ -1,0 +1,25 @@
+{
+  "name": "3.7",
+  "version": "1.0.0",
+  "description": "A modern, responsive cryptocurrency website template inspired by the SREBL design. This template features a dark theme with pixel-style typography, animated elements, and an infinite image scroller.",
+  "main": "serve.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "import-data": "node import-data.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.11.0",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

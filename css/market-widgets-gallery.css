@@ -1,0 +1,79 @@
+/**
+ * Market Widgets Gallery Styles
+ * 
+ * Additional styles for market data integration in the NFT gallery
+ */
+
+/* Market Data in NFT Modal */
+.data-source-row {
+    font-size: 0.8rem;
+    color: #777;
+    margin-top: 10px;
+}
+
+.market-data-link {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.market-data-link a {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.market-data-link a:hover {
+    text-decoration: underline;
+}
+
+/* Positive/Negative Change Colors */
+.positive-change {
+    color: #2ecc71;
+}
+
+.negative-change {
+    color: #e74c3c;
+}
+
+/* Market Data Section in Modal */
+.market-data-section {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.market-data-section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.market-data-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.market-data-item {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.market-data-label {
+    font-size: 0.8rem;
+    color: #999;
+    margin-bottom: 5px;
+}
+
+.market-data-value {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+    .market-data-grid {
+        grid-template-columns: 1fr;
+    }
+}

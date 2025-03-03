@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G.O.A.T</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="icon" href="assets/images/fav.png" type="image/png">
+    <!-- Google Fonts - Yatra One -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+    
+    
+    <!-- Three.js Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/GLTFLoader.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Goatheon Logo">
+                <span>Goatheon</span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#roadmap">ROADMAP</a></li>
+                    <li><a href="#how-to-buy">HOW TO BUY</a></li>
+                    <li><a href="gallery.html">GOAT GALLERY</a></li>
+                </ul>
+            </nav>
+            <div class="social-links">
+                <a href="#" class="social-link"><img src="assets/images/social/twitter.png" alt="Twitter"></a>
+            </div>
+            <button class="buy-button">BUY Goatheon</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-title">
+                    <img src="assets/images/crown.png" alt="Crown" class="crown-icon">
+                    <h1>Goatheon</h1>
+                </div>
+                
+                <h3 class="hero-tagline">We are the GOATs. We hunt the GOATs. And we will flood the market with nothing but GOATs. Claim yours. Launch it. Dominate</h3>
+                <div class="hero-cta">
+                    <div class="contract-address">
+                        <input type="text" value="To be Updated" readonly>
+                        <button class="copy-btn"><img src="assets/images/copy.png" alt="Copy"></button>
+                    </div>
+                    <div class="cta-buttons">
+                        <button class="buy-button">BUY Goatheon</button>
+                        <button class="dex-button">DEX SCREENER</button>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- 3D Model Container -->
+                <div id="hero-model-container" class="hero-model-container">
+                    <!-- Fallback image if 3D model fails to load -->
+                    <img src="assets/images/hero-character.png" alt="Hero Character" class="fallback-image">
+                </div>
+            </div>
+        </div>
+        <div class="city-skyline">
+            <img src="assets/images/skyline.png" alt="City Skyline">
+        </div>
+        <div class="resistance-banner">
+            <div class="banner-content">
+                <span>GOAT IS CODED</span>
+                <span class="separator">••</span>
+                <span>GOAT IS CODED</span>
+                <span class="separator">••</span>
+                <span>GOAT IS CODED</span>
+                <span class="separator">••</span>
+                <span>GOAT IS CODED</span>
+                <span class="separator">••</span>
+                <span>GOAT IS CODED</span>
+                <span class="separator">••</span>
+                <span>GOAT IS CODED</span>
+                <span class="separator">••</span>
+                <span>GOAT IS CODED</span>
+                <span class="separator">••</span>
+                <span>GOAT IS CODED</span>
+                <span class="separator">••</span>
+                <span>GOAT IS CODED</span>
+                <span class="separator">••</span>
+                <span>GOAT IS CODED</span>
+                <span class="separator">••</span>
+                <span>GOAT IS CODED</span>
+                <span class="separator">••</span>
+                <span>GOAT IS CODED</span>
+                <span class="separator">••</span>
+                <span>GOAT IS CODED</span>
+                <span class="separator">••</span>
+                <span>GOAT IS CODED</span>
+                <span class="separator">••</span>
+                <span>GOAT IS CODED</span>
+                <span class="separator">••</span>
+                <span>GOAT IS CODED</span>
+                <span class="separator">••</span>
+            </div>
+        </div>
+        
+        <!-- Gallery Stats Counter -->
+        <div class="stats-banner">
+            <div class="container">
+                <div class="gallery-stats">
+                    <div class="stat-item">
+                        <span class="stat-value" id="total-count">102</span>
+                        <span class="stat-label">TOTAL</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value" id="claimed-count">0</span>
+                        <span class="stat-label">CLAIMED</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value" id="remaining-count">102</span>
+                        <span class="stat-label">REMAINING</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value" id="next-unlock">--:--:--</span>
+                        <span class="stat-label">NEXT UNLOCK</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container about-container">
+            <div class="about-image">
+                <img src="assets/images/about-illustration.png" alt="About Illustration">
+            </div>
+            <div class="about-content">
+                <h2>wHAT IS Goatheon</h2>
+                <p>Goatheon is where legends are minted. We provide the the boldest NFT assets, letting you claim and launch your own GOAT tokens. When you claim an image, you'll be redirected to pump.fun to create your token. Once launched, return to Goatheon, enter your contract address, and mark your place in history. The first to claim an image secures it—forever. Every token's market cap and details will be tracked, proving which GOATs truly dominate. Join the movement. Flood the market with GOATs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission" class="mission">
+        <div class="container mission-container">
+            <div class="mission-content">
+                <h2>OUR MISSION</h2>
+                <p>To flood the market with GOATs and let the boldest rise. Goatheon isn’t just about launching tokens—it’s about forging legends. We provide the assets, but it’s up to you to claim, launch, and prove your dominance. The first to move secures their place. The market decides the rest.</p>
+            </div>
+            <div class="mission-image">
+                <img src="assets/images/mission-illustration.png" alt="Mission Illustration">
+                <div class="mission-caption">
+                    <h3>G.O.A.T.E.D</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infinite Scroller Section -->
+    <section id="gallery" class="gallery">
+        <div class="scroller-container">
+            <div class="scroller-content">
+                <!-- Images will be duplicated via JavaScript for infinite scrolling -->
+                <div class="scroller-item"><img src="assets/images/scroller/placeholder1.png" alt="Gallery Image 1"></div>
+                <div class="scroller-item"><img src="assets/images/scroller/placeholder2.png" alt="Gallery Image 2"></div>
+                <div class="scroller-item"><img src="assets/images/scroller/placeholder3.png" alt="Gallery Image 3"></div>
+                <div class="scroller-item"><img src="assets/images/scroller/placeholder4.png" alt="Gallery Image 4"></div>
+                <div class="scroller-item"><img src="assets/images/scroller/placeholder5.png" alt="Gallery Image 5"></div>
+                <div class="scroller-item"><img src="assets/images/scroller/placeholder6.png" alt="Gallery Image 6"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="roadmap">
+        <div class="container roadmap-container">
+            <h2>OUR ROADMAP</h2>
+            <div class="roadmap-timeline">
+                <div class="roadmap-item">
+                    <div class="roadmap-icon">
+                        <img src="assets/images/roadmap-icons/step1.png" alt="Step 1">
+                        <span class="step-number">01</span>
+                    </div>
+                    <div class="roadmap-card">
+                        <h3>Debut on Pump.fun</h3>
+                        <p>We unleash the first 102 GOAT assets, setting the stage for the strongest to launch and dominate the market. Only the boldest will rise.</p>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-icon">
+                        <img src="assets/images/roadmap-icons/step2.png" alt="Step 2">
+                        <span class="step-number">02</span>
+                    </div>
+                    <div class="roadmap-card">
+                        <h3>Expanding the Herd</h3>
+                        <p>More assets will be added in waves of 102, pushing the movement forward until we hit the legendary 1,020 mark. The GOAT flood is inevitable.</p>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-icon">
+                        <img src="assets/images/roadmap-icons/step3.png" alt="Step 3">
+                        <span class="step-number">03</span>
+                    </div>
+                    <div class="roadmap-card">
+                        <h3>3D Evolution</h3>
+                        <p>Every GOAT deserves to stand in full glory. A 3D converter will be introduced, allowing all GOAT NFTs to transform into high-quality 3D models—for free.</p>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-icon">
+                        <img src="assets/images/roadmap-icons/step4.png" alt="Step 4">
+                        <span class="step-number">04</span>
+                    </div>
+                    <div class="roadmap-card">
+                        <h3>Total Market Domination</h3>
+                        <p>This is a battleground for the elite. Only the strongest will survive. No weaklings, no paper hands—just GOATs ruling the game.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- How To Buy Section -->
+    <section id="how-to-buy" class="how-to-buy">
+        <div class="container how-to-buy-container">
+            <h2>HOW TO BUY</h2>
+            <div class="buy-steps">
+                <div class="buy-step">
+                    <div class="step-icon">
+                        <img src="assets/images/how-to-buy-icons/icon1.png" alt="Swap Icon">
+                    </div>
+                    <h4>Create a Phantom Wallet</h4>
+                </div>
+                <div class="buy-step">
+                    <div class="step-icon">
+                        <img src="assets/images/how-to-buy-icons/icon2.png" alt="Download Icon">
+                    </div>
+                    <h4>Load your Phantom wallet with Solana</h4>
+                </div>
+                <div class="buy-step">
+                    <div class="step-icon">
+                        <img src="assets/images/how-to-buy-icons/icon3.png" alt="Copy Icon">
+                    </div>
+                    <h4>Swap your Soalan for $GOAT</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NFT Section -->
+    <section id="nft" class="nft">
+        <div class="container nft-container">
+            <h2>OUR NFT COLLECTION</h2>
+            <p class="nft-description">Discover our exclusive collection of premium GOAT NFTs. Each one is unique, with its own story and characteristics. Claim yours before they're gone!</p>
+            <div class="nft-gallery">
+                <div class="nft-card">
+                    <div class="nft-image-wrapper">
+                        <img src="assets/images/nft-placeholder.gif" alt="NFT Artwork" class="nft-showcase-image">
+                        <div class="nft-overlay">
+                            <span class="nft-label">PREMIUM</span>
+                        </div>
+                    </div>
+                    <div class="nft-info">
+                        <h3>GOAT COLLECTION</h3>
+                        <p>Limited edition digital assets for the true GOAT enthusiasts. Each NFT grants exclusive benefits and bragging rights in the Goatheon ecosystem.</p>
+                        <a href="gallery.html" class="gallery-button">GALLERY <span class="arrow">→</span></a>
+                    </div>
+                </div>
+                <div class="nft-stats">
+                    <div class="nft-stat-item">
+                        <span class="nft-stat-value">102</span>
+                        <span class="nft-stat-label">TOTAL NFTs</span>
+                    </div>
+                    <div class="nft-stat-item">
+                        <span class="nft-stat-value">UNIQUE</span>
+                        <span class="nft-stat-label">DESIGNS</span>
+                    </div>
+                    <div class="nft-stat-item">
+                        <span class="nft-stat-value">EXCLUSIVE</span>
+                        <span class="nft-stat-label">BENEFITS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="community">
+        <div class="container community-container">
+            <div class="community-card">
+                <div class="community-image">
+                    <img src="assets/images/community-character.png" alt="Community Character">
+                </div>
+                <div class="community-content">
+                    <h2>JOIN OUR GUILD</h2>
+                    <div class="community-links">
+                        <a href="#" class="community-link"><img src="assets/images/social/twitter.png" alt="Twitter"></a>
+                        <a href="#" class="community-link"><img src="assets/images/social/telegram.png" alt="Telegram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <img src="assets/images/logo.png" alt="Goatheon Logo">
+                <span>Goatheon</span>
+            </div>
+            <p class="footer-tagline">G.O.A.T</p>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#roadmap">ROADMAP</a></li>
+                    <li><a href="#how-to-buy">HOW TO BUY</a></li>
+                    <li><a href="gallery.html">NFT GALLERY</a></li>
+                </ul>
+            </nav>
+            <p class="copyright">Copyright @Goatheon ⚡</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/infinite-scroller.js"></script>
+    <script src="js/banner-scroller.js"></script>
+    <script src="js/model-viewer.js"></script>
+    <script src="js/gallery-data.js"></script>
+    <script src="js/gallery-timer.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Market Dashboard</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/market-dashboard.css">
+    <link rel="stylesheet" href="css/market-widgets.css">
+    <link rel="icon" href="assets/images/fav.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="assets/images/logo.png" alt="Logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">NFT Gallery</a></li>
+                    <li><a href="market-dashboard.html" class="active">Market Data</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="market-dashboard">
+        <div class="container">
+            <h1>Crypto Market Dashboard</h1>
+            
+            <!-- Chain Selector -->
+            <div class="chain-selector" id="chain-selector">
+                <!-- Will be populated by JavaScript -->
+            </div>
+            
+            <div class="dashboard-grid">
+                <!-- Trending Tokens Section -->
+                <section class="dashboard-card trending-tokens">
+                    <div class="card-header">
+                        <h2>Trending Tokens</h2>
+                        <a href="#" class="view-more">View more</a>
+                    </div>
+                    <div class="card-content">
+                        <table id="trending-tokens-table">
+                            <thead>
+                                <tr>
+                                    <th>Token</th>
+                                    <th>Price</th>
+                                    <th>24h Chg</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Will be populated by JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                
+                <!-- Profitable Traders Section -->
+                <section class="dashboard-card profitable-traders">
+                    <div class="card-header">
+                        <h2>Profitable Traders</h2>
+                        <a href="#" class="view-more">View more</a>
+                    </div>
+                    <div class="card-content">
+                        <table id="profitable-traders-table">
+                            <thead>
+                                <tr>
+                                    <th>Trader</th>
+                                    <th>7D PnL</th>
+                                    <th>24h Vol</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Will be populated by JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                
+                <!-- Bubble Map Section -->
+                <section class="dashboard-card bubble-map">
+                    <div class="card-header">
+                        <h2>Market Overview</h2>
+                        <div class="timeframe-selector">
+                            <button data-timeframe="4H">4H</button>
+                            <button data-timeframe="8H">8H</button>
+                            <button data-timeframe="24H" class="active">24H</button>
+                            <button data-timeframe="7D">7D</button>
+                            <button data-timeframe="30D">30D</button>
+                            <button data-timeframe="1Y">1Y</button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div id="bubble-map">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Top Volume Section -->
+                <section class="dashboard-card top-volume">
+                    <div class="card-header">
+                        <h2>Top Volume</h2>
+                        <a href="#" class="view-more">Find more</a>
+                    </div>
+                    <div class="card-content">
+                        <table id="top-volume-table">
+                            <thead>
+                                <tr>
+                                    <th>Token</th>
+                                    <th>Price</th>
+                                    <th>24h Chg</th>
+                                    <th>24h Vol</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Will be populated by JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                
+                <!-- Large Trades Section -->
+                <section class="dashboard-card large-trades">
+                    <div class="card-header">
+                        <h2>Large Trades</h2>
+                        <div class="trade-size-selector">
+                            <button data-size="10K" class="active">> $10K</button>
+                            <button data-size="50K">> $50K</button>
+                            <button data-size="100K">> $100K</button>
+                            <button data-size="1M">> $1M</button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <table id="large-trades-table">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Value</th>
+                                    <th>Amount</th>
+                                    <th>Traders</th>
+                                    <th>Time</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Will be populated by JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+            
+            <div class="data-refresh">
+                <button id="refresh-data">Refresh Data</button>
+                <span id="last-updated">Last updated: <time>Just now</time></span>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Your Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/market-data.js"></script>
+    <script src="js/market-widgets.js"></script>
+    <script src="js/market-dashboard.js"></script>
+</body>
+</html>
