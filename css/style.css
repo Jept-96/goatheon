@@ -11,10 +11,12 @@
     --color-button-text: #000000;
     
     /* Typography */
-    --font-heading: 'Yatra One', cursive;
-    --font-body: 'Yatra One', cursive;
-    --font-accent: 'Yatra One', cursive;
-    
+    --font-heading: 'Silkscreen', cursive;
+    --font-body: 'Nokia Cellphone FC', sans-serif;
+    --font-accent: 'Silkscreen', cursive;
+
+
+
     /* Spacing */
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
