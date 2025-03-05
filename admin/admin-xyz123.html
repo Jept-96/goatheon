@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Control Panel</title>
+    <link rel="stylesheet" href="/admin/css/admin.css">
+</head>
+<body class="admin-panel">
+    <!-- Login Section -->
+    <div id="loginSection" class="login-section">
+        <div class="login-container">
+            <h2>Admin Login</h2>
+            <form id="loginForm" class="login-form">
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="login-button">Login</button>
+            </form>
+            <div id="loginError" class="error-message"></div>
+        </div>
+    </div>
+
+        <!-- Control Panel Section -->
+        <div id="controlSection" class="control-section hidden">
+            <div class="header">
+                <h1>NFT Gallery Control Panel</h1>
+                <button id="logoutBtn" class="logout-button">Logout</button>
+            </div>
+    
+            <div class="control-container">
+                <!-- Launch Controls -->
+                <div class="control-group">
+                    <h3>Launch Controls</h3>
+                    <div class="control-row">
+                        <button id="toggleLaunch" class="control-button">Start Launch</button>
+                        <div class="launch-status">
+                            Status: <span id="launchStatus">Not Launched</span>
+                        </div>
+                    </div>
+                    <div class="control-row">
+                        <input type="datetime-local" id="launchDate">
+                        <button id="setLaunchDate" class="control-button">Set Launch Date</button>
+                    </div>
+                </div>
+    
+                <!-- Preview Controls -->
+                <div class="control-group">
+                    <h3>Preview Mode</h3>
+                    <div class="control-row">
+                        <button id="togglePreview" class="control-button">Enable Preview</button>
+                        <div class="preview-status">
+                            Preview: <span id="previewStatus">Disabled</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Timer Status -->
+                <div class="control-group">
+                    <h3>Timer Status</h3>
+                    <div class="timer-info">
+                        <div>Next Unlock: <span id="nextUnlock">--:--:--</span></div>
+                        <div>Unlocked NFTs: <span id="unlockedCount">0</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <!-- Scripts -->
+    <script src="../config/launch-config.js"></script>
+    <script src="/admin/js/auth.js"></script>
+    <script src="/admin/js/admin.js"></script>
+</body>
+</html>
