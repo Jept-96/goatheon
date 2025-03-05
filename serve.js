@@ -41,8 +41,22 @@ const server = http.createServer((req, res) => {
     '/': '/loading.html',
     '/home': '/home.html',
     '/loading': '/loading.html',
-    '/gallery': '/gallery.html'
+    '/gallery': '/gallery.html',
+    '/admin': '/admin/admin-xyz123.html',
   };
+  // Special handling for config files
+  if (url.startsWith('/config/')) {
+    const configPath = path.join(__dirname, url);
+    console.log('Serving config file:', configPath);
+    if (fs.existsSync(configPath)) {
+      const ext = path.extname(configPath);
+      const contentType = MIME_TYPES[ext] || 'application/octet-stream';
+      res.writeHead(200, { 'Content-Type': contentType });
+      fs.createReadStream(configPath).pipe(res);
+      return;
+    }
+  }
+
 
   // Check if we have a mapping for this URL
   if (urlMap[url]) {
@@ -97,5 +111,6 @@ server.listen(PORT, () => {
   console.log(`  http://localhost:${PORT}/       -> Loading page`);
   console.log(`  http://localhost:${PORT}/home   -> Home page`);
   console.log(`  http://localhost:${PORT}/gallery -> Gallery page`);
+  console.log(`  http://localhost:${PORT}/admin -> Admin page`);
   console.log('Press Ctrl+C to stop the server');
 });
