@@ -13,11 +13,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+    <script src="js/page-protection.js"></script>
+
+    <style>
+        /* Protection styles */
+        body {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        img {
+            -webkit-user-drag: none;
+            -khtml-user-drag: none;
+            -moz-user-drag: none;
+            -o-user-drag: none;
+            pointer-events: none;
+        }
+
+        .hero-image img,
+        .about-image img,
+        .mission-image img,
+        .nft-showcase-image,
+        .scroller-item img {
+            pointer-events: none !important;
+        }
+
+        .contract-address input {
+            user-select: none;
+        }
+    </style>
     
-    
-    <!-- Three.js Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/GLTFLoader.js"></script>
+
 </head>
 <body>
     <!-- Header Section -->
@@ -338,14 +368,37 @@
         Your browser does not support the audio element.
     </audio>
 
-    <!-- JavaScript -->
+
+    <!-- Scripts in dependency order -->
+    <!-- Socket.IO and Three.js come first -->
+    <script src="https://cdn.socket.io/4.6.0/socket.io.min.js"></script>
+    <script>
+        // Initialize socket connection
+        const socket = io('http://localhost:3001');
+        socket.on('connect', () => {
+            console.log('Connected to server');
+            socket.emit('requestState');
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/GLTFLoader.js"></script>
+
+
+    <!-- Core configurations -->
     <script src="config/launch-config.js"></script>
+
+    <!-- Main functionality -->
     <script src="js/main.js"></script>
+    <script src="js/gallery-data.js"></script>
+
+    <!-- Timer and UI -->
+    <script src="js/gallery-timer.js"></script>
+
+    <!-- Additional features -->
     <script src="js/infinite-scroller.js"></script>
     <script src="js/banner-scroller.js"></script>
     <script src="js/model-viewer.js"></script>
-    <script src="js/gallery-data.js"></script>
-    <script src="js/gallery-timer.js"></script>
     <script src="js/background-audio.js"></script>
 </body>
 </html>
