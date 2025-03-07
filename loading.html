@@ -17,6 +17,7 @@
     <!-- Three.js Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="js/page-protection.js"></script>
     
     <style>
         /* Loading page specific styles */
@@ -32,7 +33,33 @@
             height: 100vh;
             margin: 0;
             padding: 0;
+            -webkit-touch-callout: none; /* iOS Safari */
+            -webkit-user-select: none; /* Safari */
+            -khtml-user-select: none; /* Konqueror HTML */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version */
         }
+
+        img {
+            -webkit-user-drag: none;
+            -khtml-user-drag: none;
+            -moz-user-drag: none;
+            -o-user-drag: none;
+            pointer-events: none;
+        }
+
+        .model-container img,
+        .loading-title,
+        .loading-subtitle,
+        .loading-text {
+            pointer-events: none !important;
+        }
+
+        .enter-button {
+            pointer-events: auto !important;  /* Allow button clicks */
+        }
+        
         
         .loading-container {
             width: 100%;
@@ -170,6 +197,18 @@
             Your browser does not support the audio element.
         </audio>
     </div>
+
+    <script>
+        // Disable browser shortcut keys
+        document.addEventListener('keydown', function(e) {
+            if ((e.ctrlKey || e.metaKey) && 
+                (e.key === 'u' || e.key === 's' || e.key === 'i' || e.key === 'c')) {
+                e.preventDefault();
+                return false;
+            }
+        });
+    </script>
+    
     
     <!-- Loading script -->
     <script src="js/loading.js"></script>
