@@ -15,6 +15,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+    <script src="js/page-protection.js"></script>
+
+    <style>
+        /* Protection styles */
+        body {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        img {
+            -webkit-user-drag: none;
+            -khtml-user-drag: none;
+            -moz-user-drag: none;
+            -o-user-drag: none;
+            pointer-events: none;
+        }
+
+        .modal-image {
+            pointer-events: none !important;
+        }
+    </style>
     
 </head>
 <body>
@@ -189,18 +214,36 @@
             document.cookie = 'clearLocalStorage=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
         }
     </script>
-    
-    <!-- JavaScript -->
-    <script src="config/launch-config.js"></script>
+
+    <!-- Socket.IO comes first -->
     <script src="https://cdn.socket.io/4.6.0/socket.io.min.js"></script>
+    <script>
+        // Initialize socket connection
+        const socket = io('http://localhost:3001');
+        socket.on('connect', () => {
+            console.log('Connected to server');
+            socket.emit('requestState');
+        });
+    </script>
+
+    <!-- Core configurations -->
+    <script src="config/launch-config.js"></script>
+
+    <!-- Main functionality -->
     <script src="js/main.js"></script>
-    <script src="js/market-data.js"></script>
-    <script src="js/market-widgets.js"></script>
     <script src="js/api-client.js"></script>
+
+    <!-- Data handling -->
+    <script src="js/market-data.js"></script>
     <script src="js/gallery-data.js"></script>
+
+    <!-- Timer and UI components -->
     <script src="js/gallery-timer.js"></script>
     <script src="js/gallery-ui.js"></script>
     <script src="js/gallery-claim.js"></script>
+
+    <!-- Additional features -->
+    <script src="js/market-widgets.js"></script>
     <script src="js/background-audio.js"></script>
 </body>
 </html>
